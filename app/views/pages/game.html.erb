@@ -1,0 +1,12 @@
+<h1>#game</h1>
+
+
+<form action="/score">
+  <h1><%= @grid %></h1>
+  <h2>enter a guess</h2>
+   <input type="text" name="guess" placeholder="answer?">
+  <input type="hidden" name="time" value= <%= Time.now %> >
+  <input type="hidden" name="grid" value= <%= @grid.join %>>
+</form>
+
+<p>Find me in app/views/pages/game.html.erb</p>
