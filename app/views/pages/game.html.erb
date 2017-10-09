@@ -5,7 +5,7 @@
   <h1><%= @grid %></h1>
   <h2>enter a guess</h2>
    <input type="text" name="guess" placeholder="answer?">
-  <input type="hidden" name="time" value= <%= Time.now %> >
+  <input type="hidden" name="time" value= <%= Time.now.to_i %> >
   <input type="hidden" name="grid" value= <%= @grid.join %>>
 </form>
 

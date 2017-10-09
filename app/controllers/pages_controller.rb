@@ -20,7 +20,7 @@ end
 
   def score
     @attempt = params[:guess]
-    @result = run_game(@attempt, params[:grid].split(""), params[:time].to_date.to_time, Time.now)
+    @result = run_game(@attempt, params[:grid].split(""), params[:time].to_i, Time.now.to_i)
   end
 
 
